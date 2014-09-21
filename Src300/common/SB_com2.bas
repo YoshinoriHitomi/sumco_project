@@ -1275,6 +1275,24 @@ Public Function funChkFurikaeShiyou(sProccd As String, sKeyID As String, tOld_Hi
         If RET > 0 Then GoTo Apl_Exit
         GoTo Apl_Error
     End If
+
+    'Add Start 2014/09/20 Y.Hitomi
+    '2-7 製作条件PGIDチェック
+    If Mid(sResult2, 7, 1) = "1" Then       'FEの7桁目
+            RET = funChkFurikae2_7(sProccd, sKeyID, tOld_Hinban, tNew_Hinban, iHcnt, iErr_Code, sErr_Msg)
+            If RET <> 0 Then
+                funChkFurikaeShiyou = RET
+                '判定(CC600)は抜けない
+                If sProccd = "CC600" Or sProccd = "CW750" Then
+                    If RET < 0 Then GoTo Apl_Error
+                Else
+                    If RET > 0 Then GoTo Apl_Exit
+                    GoTo Apl_Error
+                End If
+            End If
+    End If
+    'Add End 2014/09/20 Y.Hitomi
+
 '--- 2006/08/15 Add エピ先行評価追加対応 SMP)kondoh -e-
     '3-2 Warp実績チェック       05/12/28 ooba
 '    If Mid(sResult, 22, 1) = "1" Then
