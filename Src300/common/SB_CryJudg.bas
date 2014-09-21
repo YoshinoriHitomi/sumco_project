@@ -1356,6 +1356,10 @@ Dim LTSPI As String
                 'SIRD•\¦
                 '‰æ–Ê•\¦“à—eİ’è
                 .typ_rslt(tt, i).INFO1 = "æs•]‰¿"                     ' î•ñ‚P
+                   'Add Start 2014/09/21 Y.Hitomi
+                    TotalJudg = False
+                    'Add Start 2014/09/21 Y.Hitomi
+ 
                 .typ_rslt(tt, i).INFO2 = ""                             ' î•ñ‚Q
                 .typ_rslt(tt, i).INFO3 = ""                             ' î•ñ‚R
                 .typ_rslt(tt, i).OKNG = "OK"                            ' ”»’èŒ‹‰Ê
