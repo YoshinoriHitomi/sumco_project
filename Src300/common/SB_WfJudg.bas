@@ -1101,6 +1101,7 @@ Public Function WfAllJudg(typ_CType As typ_AllTypesC, tNew_Hinban As tFullHinban
         '結晶コードリスト取得失敗
         Exit Function
     End If
+'test Git 2014/09/24 2  
     
     With typ_CType
         '' WF検査指示（Rs)*****************************************************************
