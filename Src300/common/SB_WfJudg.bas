@@ -1279,6 +1279,7 @@ Public Function WfAllJudg(typ_CType As typ_AllTypesC, tNew_Hinban As tFullHinban
 '                TotalJudg = False
                 If tt = SxlTop Or tt = SxlTail Then TotalJudg = False Else MidlJudg = False
 'Chg End   2011/03/09 SMPK Miyata
+'test Git 2014/09/24 3  
 
 '--------------- 2008/07/25 INSERT START  By Systech ---------------
                 gsTbcmy028ErrCode = "00131"
