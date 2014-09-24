@@ -972,7 +972,8 @@ Private Sub SpecJudgCheck()
     Dim c0  As Integer
     
     With typ_CType
-    
+'test Git 2014/09/24   
+
 '‚v‚eƒTƒ“ƒvƒ‹ˆ—•ÏX 2003.05.20 yakimura
 '        JudgSW.rs = (.typ_si.HWFRHWYS = "X")
 '        JudgSW.Oi = (.typ_si.HWFONHWS = "X")
